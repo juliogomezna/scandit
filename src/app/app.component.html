@@ -1,0 +1,24 @@
+Ready: {{isReady}}
+
+
+<hr>
+
+<scandit-sdk-barcode-picker #picker [accessCamera]="cameraAccess"
+                            [camera]="activeCamera"
+                            [cameraSettings]="cameraSettings"
+                            [enableCameraSwitcher]="enableCameraSwitcher"
+                            [enablePinchToZoom]="enablePinchToZoom"
+                            [enableTapToFocus]="enableTapToFocus"
+                            [enableTorchToggle]="enableTorchToggle"
+                            [guiStyle]="scannerGuiStyle"
+                            [paused]="scanningPaused"
+                            [playSoundOnScan]="enableSoundOnScan"
+                            [scanSettings]="activeSettings"
+                            [targetScanningFPS]="fps"
+                            [vibrateOnScan]="enableVibrateOnScan"
+                            [videoFit]="videoFit"
+                            [visible]="visible"
+                            [style.height]="'35vw'"
+                            [style.width]="'60vw'"
+                            (scan)="onScan($event)"
+                            (init)="isReady = false" (ready)="isReady = true"></scandit-sdk-barcode-picker>

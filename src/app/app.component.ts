@@ -34,7 +34,15 @@ export class AppComponent {
 
   constructor() {
     this.settings128 = new ScanSettings({
-      enabledSymbologies: [Barcode.Symbology.CODE128]
+      enabledSymbologies: [Barcode.Symbology.CODE128,
+        Barcode.Symbology.EAN8,
+        Barcode.Symbology.EAN13,
+        Barcode.Symbology.UPCA,
+        Barcode.Symbology.UPCE,
+        Barcode.Symbology.CODE128,
+        Barcode.Symbology.CODE39,
+        Barcode.Symbology.CODE93,
+        Barcode.Symbology.INTERLEAVED_2_OF_5]
     });
     this.settings39 = new ScanSettings({
       enabledSymbologies: [Barcode.Symbology.CODE39]

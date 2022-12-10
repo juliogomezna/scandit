@@ -23,7 +23,7 @@
     "@angular/router": "^8.1.2",
     "@angular/service-worker": "^8.1.2",
     "core-js": "^2.6.9",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7",
     "rxjs": "^6.5.2",
     "scandit-sdk": "^4.4",
